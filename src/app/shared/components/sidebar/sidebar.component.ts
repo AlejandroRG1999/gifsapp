@@ -16,4 +16,9 @@ export class SidebarComponent {
     return this.gifsService.tagsHistory;
   }
 
+  public searchGifs(tag: string): void {
+    const asd = this.gifsService.searchTag(tag);
+    console.log(asd);
+  }
+
 }
